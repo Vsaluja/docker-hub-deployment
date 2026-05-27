@@ -16,7 +16,7 @@ services:
       - my-db-volume:/var/lib/mysql
 
   nodejs:
-    build: ${{ secrets.DOCKER_USERNAME }}/docker-backend:latest
+    image: ${DOCKER_USERNAME}/docker-backend:latest
     container_name: node_container
     restart: always
     ports:

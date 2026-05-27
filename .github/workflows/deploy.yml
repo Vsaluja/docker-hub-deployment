@@ -35,5 +35,6 @@ jobs:
           key: ${{secrets.EC2_SSH_KEY}}
           script: |
             cd docker-hub-deployment
+            export DOCKER_USERNAME=${{secrets.DOCKER_USERNAME}}
             docker compose pull
             docker compose up -d
