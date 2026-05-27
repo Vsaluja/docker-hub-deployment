@@ -22,7 +22,7 @@ const PORT = process.env.PORT || 5000;
 // Root route
 app.get("/", (req, res) => {
   res.json({
-    message: "Backend is running successfully!!!! 🚀",
+    message: "Backend is running successfully! 🚀",
   });
 });
 
@@ -55,6 +55,11 @@ app.get("/api/users", (req, res) => {
       id: 4,
       name: "Shawn White",
       role: "Devops Engineer",
+    },
+    {
+      id: 5,
+      name: "James Brown",
+      role: "Manager",
     },
   ]);
 });
