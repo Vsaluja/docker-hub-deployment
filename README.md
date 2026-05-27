@@ -28,6 +28,10 @@ The EC2 instance contains:
 * `docker-compose.yml`
 * Environment configuration files
 
+### Initial Server Setup Requirement
+
+For this deployment approach, the project repository must be cloned on the EC2 instance during the initial server setup. After the initial setup, all future deployments automatically pull the latest repository changes using `git pull`.
+
 ### Deployment Commands Executed on EC2
 
 ```bash
@@ -41,4 +45,3 @@ docker compose up -d
 * Automated deployments using GitHub Actions
 * Consistent containerized environment
 * Latest configuration and deployment files automatically synced from GitHub
-* Simple and production-friendly setup for small to mid-sized applications
